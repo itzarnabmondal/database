@@ -34,3 +34,19 @@ insert into student_details values
 (5,'Payel',834772288,'payel@gmail.com','pune','MCA',1000.3,'1998-06-04',25),
 (6,'riya',834888288,'riya@gmail.com','mumbai','BE',1000.3,'2000-05-05',29),
 (7,'priya',834992288,'prita@gmail.com','goa','B Tech',1000.3,'1990-04-06',28),
+#select
+select * from student where squalification = 'BE';
+
+select * from student where saddr = 'chennai' and sfees = '1000.3';
+select * from student where saddr = 'chennai' or sfees = '1000.3';
+select * from student where saddr = 'chennai' and sfees = '2000.3';
+select * from student where squalification = 'chennai' or sfees ='2000.3';
+select * from student where squalidacation != 'BE';
+select * from student where saddr in('mumbai','chennai');
+select * from student where squelification in('msc, 'BE');
+select * from student where sname like '%A';
+select * from student where sname like 'A%';
+select * from student where sname like '%A%';
+select * from student where sname like 'B%A';
+select * from student where saddr like 'che__ai';
+select * from student where squalidacation line 'D_';
