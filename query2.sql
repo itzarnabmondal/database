@@ -1,0 +1,15 @@
+create database mydb;
+use mydb;
+create table users(id int(11) primary key, name varchar(20) not null, country varchar(20));
+insert into users values(1, 'arnab', 'india');
+insert into users values(2, 'alex', 'usa');
+insert into users values(3, 'bob', 'uk');
+insert into users values(4, 'john', 'uae');
+insert into users values(5, 'dip', 'india');
+alter table users rename to students;
+alter table students rename column country to region;
+alter table students add column email varchar(30);
+alter table students drop column email;
+update students set region='germany' where id=4;
+truncate table students;
+drop table students;
